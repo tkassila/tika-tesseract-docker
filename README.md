@@ -12,9 +12,19 @@ Sets up a container based on
 
 ## Usage
 
+To use the image from the Docker registry, just do:
+
+    sudo docker run -d -p 9998:9998 mattfullerton/tika-tesseract-docker
+    
+N.B.: This automated build has a problem preventing the process from running. An alternative, manually built repository is at mattfullerton/tika-tesseract-docker-no-automation, or you may have success building yourself (below), or not. I am trying to understand how this can happen!
+
+I.e., alternatively try:
+
+    sudo docker run -d -p 9998:9998 mattfullerton/tika-tesseract-docker-no-automation
+    
 To build and run the container, do the following:
 
-    sudo docker build github.com/mattfullerton/tika
+    sudo docker build -t tika github.com/mattfullerton/tika
     sudo docker run -d -p 9998:9998 tika
 
 Test with commands like:
