@@ -1,4 +1,4 @@
-FROM dockerfile/java
+FROM java:7
 MAINTAINER Todd Tyree <tatyree@gmail.com>
 
 RUN mkdir /setup
