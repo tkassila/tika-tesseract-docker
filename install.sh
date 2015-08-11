@@ -7,7 +7,7 @@ mkdir install
 curl https://codeload.github.com/apache/tika/zip/trunk -o trunk.zip
 unzip trunk.zip
 cd tika-trunk
-mvn clean install
+mvn -DskipTests=true clean install
 cp tika-server/target/tika-server-1.9-SNAPSHOT.jar /srv/tika-server-1.9-SNAPSHOT.jar
 
 echo "#Installing tesseract"
