@@ -31,8 +31,8 @@ To build and run the container, do the following:
 
 Test with commands like:
 
-    curl -T testpdf.pdf http://``docker-machine ip default``:9998/tika
-    curl -T multipage_tiff_example.tif http://``docker-machine ip default``:9998/tika
+    curl -T testpdf.pdf http://`docker-machine ip default`:9998/tika
+    curl -T multipage_tiff_example.tif http://`docker-machine ip default`:9998/tika
     
 (or replace ``docker-machine ip default`` with the IP address of your docker container).
 The second command uses OCR.
