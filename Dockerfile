@@ -1,5 +1,5 @@
 FROM java:7
-MAINTAINER Todd Tyree <tatyree@gmail.com>
+MAINTAINER Matt Fullerton <matt.fullerton@gmail.com>
 
 RUN mkdir /setup
 ADD install.sh /setup/install.sh

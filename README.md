@@ -1,14 +1,16 @@
 # Apache Tika Server w/ Tesseract in Docker
 
 Sets up a container based on
-[dockerfile/java](https://registry.hub.docker.com/u/dockerfile/java/)
+[java:7](https://hub.docker.com/_/java/)
 
-(This may not be the best basis)
 
 ## Includes
 
-  * [Apache Tika 1.8-SNAPSHOT Server](http://wiki.apache.org/tika/TikaJAXRS)
+  * [Apache Tika Server](http://wiki.apache.org/tika/TikaJAXRS) - latest development version (1.13-SNAPSHOT currently)
   * [Tesseract](https://code.google.com/p/tesseract-ocr/), with English and German languages
+
+If you prefer the latest stable version of Tika-server (including OCR via Tesseract), you may want to consider
+[`logicalspark/docker-tikaserver`](https://github.com/LogicalSpark/docker-tikaserver)
 
 ## Usage
 
