@@ -9,7 +9,7 @@ Sets up a container based on
   * [Apache Tika Server](http://wiki.apache.org/tika/TikaJAXRS) - latest development version (1.13-SNAPSHOT currently)
   * [Tesseract](https://code.google.com/p/tesseract-ocr/), with English and German languages
 
-If you prefer the latest stable version of Tika, you may want to consider
+If you prefer the latest stable version of Tika-server (including OCR via Tesseract), you may want to consider
 [`logicalspark/docker-tikaserver`](https://github.com/LogicalSpark/docker-tikaserver)
 
 ## Usage
@@ -31,10 +31,9 @@ To build and run the container, do the following:
 
 Test with commands like:
 
-    curl -T testpdf.pdf http://`docker-machine ip default`:9998/tika
-    curl -T multipage_tiff_example.tif http://`docker-machine ip default`:9998/tika
+    curl -T testpdf.pdf http://localhost:9998/tika
+    curl -T multipage_tiff_example.tif http://localhost:9998/tika
     
-(or replace ``docker-machine ip default`` with the IP address of your docker container).
 The second command uses OCR.
 
 ## Author
