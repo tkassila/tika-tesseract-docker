@@ -6,7 +6,7 @@ Sets up a container based on
 
 ## Includes
 
-  * [Apache Tika Server](http://wiki.apache.org/tika/TikaJAXRS) - latest development version (1.13-SNAPSHOT currently)
+  * [Apache Tika Server](http://wiki.apache.org/tika/TikaJAXRS) - latest development version (1.14 currently)
   * [Tesseract](https://code.google.com/p/tesseract-ocr/), with English and German languages
 
 If you prefer the latest stable version of Tika-server (including OCR via Tesseract), you may want to consider
@@ -16,7 +16,7 @@ If you prefer the latest stable version of Tika-server (including OCR via Tesser
 
 To use the image from the Docker registry, just do:
 
-    sudo docker run -d -p 9998:9998 mattfullerton/tika-tesseract-docker
+    sudo docker run -d -p 9998:9998 tkassila/tika-tesseract-docker
     
 N.B.: This automated build has a problem preventing the process from running. An alternative, manually built repository is at mattfullerton/tika-tesseract-docker-no-automation, or you may have success building yourself (below), or not. I am trying to understand how this can happen!
 
