@@ -8,7 +8,7 @@ curl https://codeload.github.com/apache/tika/zip/trunk -o trunk.zip
 unzip trunk.zip
 cd tika-trunk
 mvn -DskipTests=true clean install
-cp tika-server/target/tika-server-1.*.jar /srv/tika-server-1.*.jar
+cp tika-server/target/tika-server-14.*.jar /srv/tika-server-14.*.jar
 
 echo "#Installing tesseract"
 apt-get -y -q install tesseract-ocr tesseract-ocr-swe tesseract-ocr-eng  tesseract-ocr-fin
