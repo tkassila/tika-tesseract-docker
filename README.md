@@ -7,7 +7,7 @@ Sets up a container based on
 ## Includes
 
   * [Apache Tika Server](http://wiki.apache.org/tika/TikaJAXRS) - latest development version (1.14 currently)
-  * [Tesseract](https://code.google.com/p/tesseract-ocr/), with English and German languages
+  * [Tesseract](https://code.google.com/p/tesseract-ocr/), with English, Finnish and Swedish languages
 
 If you prefer the latest stable version of Tika-server (including OCR via Tesseract), you may want to consider
 [`logicalspark/docker-tikaserver`](https://github.com/LogicalSpark/docker-tikaserver)
